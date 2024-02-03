@@ -1,0 +1,11 @@
+<div class="todos">
+    <div class="todo">
+        @for(todo of todos;track todo.id){
+            <div class="todo {{ (todo.completed ? 'done': '')}}">
+                <div class="id">{{todo.id}}</div>
+                <div class="content">{{todo.content}}</div>
+                <button type="delete">Remove</button>
+            </div>
+        }
+    </div>
+</div>
